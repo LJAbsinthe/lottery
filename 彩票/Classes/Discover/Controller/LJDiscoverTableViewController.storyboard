@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v9M-Rg-YaJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Discover Table View Controller-->
+        <scene sceneID="IwO-MA-yft">
+            <objects>
+                <tableViewController id="v9M-Rg-YaJ" customClass="LJDiscoverTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="rQh-iA-3sC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="INn-cE-PBQ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="80" id="dh5-Qh-omD">
+                                        <rect key="frame" x="0.0" y="35" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dh5-Qh-omD" id="cS9-dX-ghW">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discovery_groupBuy_title" translatesAutoresizingMaskIntoConstraints="NO" id="Lz8-ar-4bm">
+                                                    <rect key="frame" x="10" y="8" width="61" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="34" id="KmO-rI-KHe"/>
+                                                        <constraint firstAttribute="width" constant="61" id="ow2-eQ-8MR"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="跟着高手买,奖金一起坑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiP-tS-ExE">
+                                                    <rect key="frame" x="10" y="51" width="178" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discovery_groupBuy_icon" translatesAutoresizingMaskIntoConstraints="NO" id="oG7-OS-zHH">
+                                                    <rect key="frame" x="241" y="0.0" width="100" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="WhH-Eo-9Th"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="iiP-tS-ExE" secondAttribute="bottom" constant="8" id="1Id-Rw-M5R"/>
+                                                <constraint firstItem="Lz8-ar-4bm" firstAttribute="leading" secondItem="cS9-dX-ghW" secondAttribute="leading" constant="10" id="Byl-5i-CE7"/>
+                                                <constraint firstItem="iiP-tS-ExE" firstAttribute="leading" secondItem="cS9-dX-ghW" secondAttribute="leading" constant="10" id="RA7-Wh-fVQ"/>
+                                                <constraint firstItem="oG7-OS-zHH" firstAttribute="top" secondItem="cS9-dX-ghW" secondAttribute="top" id="e1t-Ax-gpR"/>
+                                                <constraint firstAttribute="bottom" secondItem="oG7-OS-zHH" secondAttribute="bottom" id="ixg-m7-y84"/>
+                                                <constraint firstItem="Lz8-ar-4bm" firstAttribute="top" secondItem="cS9-dX-ghW" secondAttribute="top" constant="8" id="qX0-Wv-EQf"/>
+                                                <constraint firstAttribute="trailing" secondItem="oG7-OS-zHH" secondAttribute="trailing" id="zE2-Mm-Upi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="yGQ-sO-GNQ" kind="push" id="aXp-d1-aKa"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="Yss-2X-Ih7">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="mzj-rW-arg">
+                                        <rect key="frame" x="0.0" y="151" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mzj-rW-arg" id="WZ6-cc-zLN">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discovery_groupBuy_title" translatesAutoresizingMaskIntoConstraints="NO" id="W0a-CY-BtJ">
+                                                    <rect key="frame" x="10" y="8" width="61" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="61" id="ReW-4t-PQG"/>
+                                                        <constraint firstAttribute="height" constant="34" id="SUh-a2-uW7"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="跟着高手买,奖金一起坑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blU-1i-kKK">
+                                                    <rect key="frame" x="10" y="51" width="178" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discovery_groupBuy_icon" translatesAutoresizingMaskIntoConstraints="NO" id="KVG-40-RVQ">
+                                                    <rect key="frame" x="275" y="0.0" width="100" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="tMS-pu-2Zc"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="blU-1i-kKK" firstAttribute="leading" secondItem="WZ6-cc-zLN" secondAttribute="leading" constant="10" id="7FK-kk-4jb"/>
+                                                <constraint firstAttribute="bottom" secondItem="blU-1i-kKK" secondAttribute="bottom" constant="8" id="8PG-xC-Ttd"/>
+                                                <constraint firstAttribute="trailing" secondItem="KVG-40-RVQ" secondAttribute="trailing" id="LWt-Lv-5T5"/>
+                                                <constraint firstAttribute="bottom" secondItem="KVG-40-RVQ" secondAttribute="bottom" id="T3s-OR-Lu5"/>
+                                                <constraint firstItem="KVG-40-RVQ" firstAttribute="top" secondItem="WZ6-cc-zLN" secondAttribute="top" id="Tz3-Eu-wCN"/>
+                                                <constraint firstItem="W0a-CY-BtJ" firstAttribute="top" secondItem="WZ6-cc-zLN" secondAttribute="top" constant="8" id="oks-c0-6rt"/>
+                                                <constraint firstItem="W0a-CY-BtJ" firstAttribute="leading" secondItem="WZ6-cc-zLN" secondAttribute="leading" constant="10" id="zNF-bz-7ej"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="9Cq-Z4-BFJ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="JcN-nd-wwO">
+                                        <rect key="frame" x="0.0" y="267" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JcN-nd-wwO" id="vqk-VO-taP">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discovery_groupBuy_title" translatesAutoresizingMaskIntoConstraints="NO" id="Saq-EC-5bt">
+                                                    <rect key="frame" x="10" y="8" width="61" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="61" id="D5Z-t3-9ag"/>
+                                                        <constraint firstAttribute="height" constant="34" id="Sau-pJ-3X5"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="跟着高手买,奖金一起坑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0b-qC-197">
+                                                    <rect key="frame" x="10" y="51" width="178" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discovery_groupBuy_icon" translatesAutoresizingMaskIntoConstraints="NO" id="gDr-0j-FCI">
+                                                    <rect key="frame" x="275" y="0.0" width="100" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="Kt1-io-KFA"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Saq-EC-5bt" firstAttribute="top" secondItem="vqk-VO-taP" secondAttribute="top" constant="8" id="1ky-W4-EwH"/>
+                                                <constraint firstItem="K0b-qC-197" firstAttribute="leading" secondItem="vqk-VO-taP" secondAttribute="leading" constant="10" id="VBW-hz-h5Q"/>
+                                                <constraint firstAttribute="bottom" secondItem="K0b-qC-197" secondAttribute="bottom" constant="8" id="cdT-T7-iKg"/>
+                                                <constraint firstItem="gDr-0j-FCI" firstAttribute="top" secondItem="vqk-VO-taP" secondAttribute="top" id="cx8-lx-SIR"/>
+                                                <constraint firstAttribute="bottom" secondItem="gDr-0j-FCI" secondAttribute="bottom" id="fQA-My-gsv"/>
+                                                <constraint firstItem="Saq-EC-5bt" firstAttribute="leading" secondItem="vqk-VO-taP" secondAttribute="leading" constant="10" id="pWb-Dj-HxA"/>
+                                                <constraint firstAttribute="trailing" secondItem="gDr-0j-FCI" secondAttribute="trailing" id="zqF-7t-Xv1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection id="uA7-hu-cF0">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="82y-Fj-dL5">
+                                        <rect key="frame" x="0.0" y="383" width="375" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="82y-Fj-dL5" id="gQv-qV-dFg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discovery_groupBuy_title" translatesAutoresizingMaskIntoConstraints="NO" id="gCf-Nu-VNL">
+                                                    <rect key="frame" x="10" y="8" width="61" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="61" id="SPV-cm-93F"/>
+                                                        <constraint firstAttribute="height" constant="34" id="SVY-nh-Ugb"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="跟着高手买,奖金一起坑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MX9-i3-FQw">
+                                                    <rect key="frame" x="10" y="51" width="178" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discovery_groupBuy_icon" translatesAutoresizingMaskIntoConstraints="NO" id="6rv-Xo-1OU">
+                                                    <rect key="frame" x="275" y="0.0" width="100" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="7T7-Sj-apC"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="MX9-i3-FQw" firstAttribute="leading" secondItem="gQv-qV-dFg" secondAttribute="leading" constant="10" id="CI2-3x-Ozd"/>
+                                                <constraint firstAttribute="trailing" secondItem="6rv-Xo-1OU" secondAttribute="trailing" id="D4C-GQ-lSP"/>
+                                                <constraint firstItem="6rv-Xo-1OU" firstAttribute="top" secondItem="gQv-qV-dFg" secondAttribute="top" id="PPR-pC-erZ"/>
+                                                <constraint firstItem="gCf-Nu-VNL" firstAttribute="top" secondItem="gQv-qV-dFg" secondAttribute="top" constant="8" id="dM5-Ry-jst"/>
+                                                <constraint firstAttribute="bottom" secondItem="6rv-Xo-1OU" secondAttribute="bottom" id="fJl-8M-XqH"/>
+                                                <constraint firstItem="gCf-Nu-VNL" firstAttribute="leading" secondItem="gQv-qV-dFg" secondAttribute="leading" constant="10" id="gyJ-ge-uS7"/>
+                                                <constraint firstAttribute="bottom" secondItem="MX9-i3-FQw" secondAttribute="bottom" constant="8" id="oWW-0C-pyq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="v9M-Rg-YaJ" id="cMd-WD-1kS"/>
+                            <outlet property="delegate" destination="v9M-Rg-YaJ" id="9YB-p3-vyJ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UJe-UB-tdl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-612" y="-39"/>
+        </scene>
+        <!--Buy View Controller-->
+        <scene sceneID="yIw-X0-4dR">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="yGQ-sO-GNQ" customClass="LJBuyViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y7c-Uk-RNj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="QOu-w5-mJL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="buk-Sv-m7w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p4B-nn-6ma" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="198" y="-39"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="discovery_groupBuy_icon" width="113" height="67"/>
+        <image name="discovery_groupBuy_title" width="54" height="23"/>
+    </resources>
+</document>
